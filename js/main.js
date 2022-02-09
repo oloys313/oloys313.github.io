@@ -47,14 +47,14 @@ const scene = new THREE.Scene();
 		
 		Array(200).fill().forEach(addStar);
 		
-		const jeffTexture = new THREE.TextureLoader().load('img/jeff.jpg');
+		const jeffTexture = new THREE.TextureLoader().load('img/jeff.png');
 		const jeff = new THREE.Mesh(
 			new THREE.BoxGeometry(3,3,3),
 			new THREE.MeshStandardMaterial({map: jeffTexture,}),
 		);
 		scene.add(jeff);
 
-		const moonTexture = new THREE.TextureLoader().load('img/jeff.jpg');
+		const moonTexture = new THREE.TextureLoader().load('img/jeff.png');
 
 		const moon = new THREE.Mesh(
 		new THREE.SphereGeometry(3, 32, 32),
