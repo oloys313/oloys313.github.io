@@ -90,10 +90,10 @@ const scene = new THREE.Scene();
 		document.body.onscroll = moveCamera;
 		moveCamera();
 
-		const loader = new OBJLoader();
+		const objloader = new OBJLoader();
 
 		// load a resource
-		loader.load(
+		objloader.load(
 			// resource URL
 			'obj/Mysterious.obj',
 			// called when resource is loaded
