@@ -95,7 +95,7 @@ const scene = new THREE.Scene();
 		// load a resource
 		loader.load(
 			// resource URL
-			'models/monster.obj',
+			'obj/Mysterious.obj',
 			// called when resource is loaded
 			function ( object ) {
 
