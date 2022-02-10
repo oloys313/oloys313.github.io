@@ -93,9 +93,9 @@ const scene = new THREE.Scene();
 	document.body.onscroll = moveCamera;
 	moveCamera();
 
-	const loader = new GLTFLoader();
+	const gloader = new GLTFLoader();
 
-	loader.load( "obj\scene.gltf", function ( gltf ) {
+	gloader.load( "obj\scene.gltf", function ( gltf ) {
 
 		scene.add( gltf.scene );
 
