@@ -93,31 +93,17 @@ const scene = new THREE.Scene();
 	document.body.onscroll = moveCamera;
 	moveCamera();
 
-	const objloader = new THREE.OBJLoader();
+	const loader = new GLTFLoader();
 
-	// load a resource
-	objloader.load(
-		// resource URL
-		'obj/Mysterious.obj',
-		// called when resource is loaded
-		function ( object ) {
+	loader.load( "obj\scene.gltf", function ( gltf ) {
 
-			scene.add( object );
+		scene.add( gltf.scene );
 
-		},
-		// called when loading is in progresses
-		function ( xhr ) {
+	}, undefined, function ( error ) {
 
-			console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+		console.error( error );
 
-		},
-		// called when loading has errors
-		function ( error ) {
-
-			console.log( 'An error happened' );
-
-		}
-	);
+	} );
 
 			
 			function animate() {
