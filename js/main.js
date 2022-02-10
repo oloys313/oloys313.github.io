@@ -93,7 +93,7 @@ const scene = new THREE.Scene();
 		const objloader = new OBJLoader();
 
 		// load a resource
-		objloader.load(
+		/*objloader.load(
 			// resource URL
 			'obj/Mysterious.obj',
 			// called when resource is loaded
@@ -114,7 +114,7 @@ const scene = new THREE.Scene();
 				console.log( 'An error happened' );
 
 			}
-		);
+		);*/
 
 				
 				function animate() {
