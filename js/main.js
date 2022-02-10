@@ -93,7 +93,7 @@ const scene = new THREE.Scene();
 	document.body.onscroll = moveCamera;
 	moveCamera();
 
-	const objloader = new OBJLoader();
+	const objloader = new THREE.OBJLoader();
 
 	// load a resource
 	objloader.load(
