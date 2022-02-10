@@ -93,7 +93,7 @@ const scene = new THREE.Scene();
 	document.body.onscroll = moveCamera;
 	moveCamera();
 
-	/*const objloader = new THREE.OBJLoader();
+	const objloader = new THREE.OBJLoader();
 
 	// load a resource
 	objloader.load(
@@ -117,7 +117,7 @@ const scene = new THREE.Scene();
 			console.log( 'An error happened' );
 
 		}
-	);*/
+	);
 
 			
 			function animate() {
