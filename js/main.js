@@ -1,5 +1,5 @@
 import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.137.5-HJEdoVYPhjkiJWkt6XIa/mode=imports/optimized/three.js';
-
+import { GLTFLoader } from 'https://cdn.skypack.dev/pin/three@v0.137.5-HJEdoVYPhjkiJWkt6XIa/mode=raw/examples/jsm/loaders/GLTFLoader.js';
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
@@ -71,6 +71,18 @@ moon.position.setX(-10);
 
 jeff.position.z = -5;
 jeff.position.x = 2;
+
+const loader = new GLTFLoader();
+
+loader.load( 'obj\scene.gltf', function ( gltf ) {
+
+	scene.add( gltf.scene );
+
+}, undefined, function ( error ) {
+
+	console.error( error );
+
+} );
 
 // Scroll Animation
 
