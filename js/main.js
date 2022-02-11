@@ -73,9 +73,9 @@ moon.position.setX(-10);
 jeff.position.z = -5;
 jeff.position.x = 2;
 
-const loader = new GLTFLoader();
+const gloader = new GLTFLoader();
 
-loader.load( 'obj\scene.gltf', function ( gltf ) {
+gloader.load( 'obj\scene.gltf', function ( gltf ) {
 
 	scene.add( gltf.scene );
 
