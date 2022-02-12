@@ -16,6 +16,14 @@ body {
     overflow-x: hidden;
 }
 
+footer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
 .webgl
 {
     position: absolute;
@@ -23,6 +31,7 @@ body {
     left: 0;
     outline: none;
     mix-blend-mode: exclusion;
+    height: 100vh;
 }
 
 .container {
@@ -68,3 +77,17 @@ body {
 }
 
 section {height:100vh;}
+
+.animation {
+    height: 100vh;
+    background: rgb(24,24,24);
+    position: relative;
+    overflow: hidden;
+}
+
+.paper-plane {
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
