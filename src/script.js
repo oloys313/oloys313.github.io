@@ -1,6 +1,6 @@
 import './style.css'
 // import * as THREE from 'https://cdn.skypack.dev/-/three@v0.137.5-HJEdoVYPhjkiJWkt6XIa/dist=es2019,mode=raw/build/three.module.js'
-import * as THREE from '././three.module.js'
+import * as THREE from '././node_modules/three/build/three.module.js'
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 // import * as dat from 'dat.gui'
 
