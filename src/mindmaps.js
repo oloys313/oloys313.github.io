@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     var oourScene = new ScrollMagic.Scene({
         triggerElement: '.animation',
-        duration: 100,
+        duration: 1100,
         offset: 200,
         triggerHook: 1,
         reverse: true
