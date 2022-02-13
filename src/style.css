@@ -113,6 +113,14 @@ section {height:100vh;}
     top: 375px;
     left: 50%;
     font-size: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.quoteText.show {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .mindmap {

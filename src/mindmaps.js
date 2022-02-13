@@ -2,11 +2,18 @@ $(document).ready(function(){
     var controller = new ScrollMagic.Controller();
 
     var ourScene = new ScrollMagic.Scene({
-        triggerElement: '.animation.b',
+        triggerElement: '.mindmap.a',
         reverse: true
     })
-    .addIndicators()
-    .setPin('.animation.b')
     .setClassToggle('.mindmap.a','show')
     .addTo(controller);
+
+    var ccontroller = new ScrollMagic.Controller();
+
+    var oourScene = new ScrollMagic.Scene({
+        triggerElement: '.animation',
+        reverse: true
+    })
+    .setClassToggle('.quoteText','show')
+    .addTo(ccontroller);
 })
