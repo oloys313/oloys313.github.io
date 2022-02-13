@@ -149,4 +149,5 @@ section {height:100vh;}
     color: white;
     left: 7.5%;
     font-family: 'Helvetica';
+    white-space: pre-line;
 }
