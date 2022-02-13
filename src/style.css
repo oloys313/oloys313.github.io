@@ -146,6 +146,7 @@ section {height:100vh;}
 
 .mindmap.a h4 {
     position: relative;
+    font-size: 10vw;
     color: white;
     left: 7.5%;
     font-family: 'Helvetica';
