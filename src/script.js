@@ -122,7 +122,7 @@ function onDocumentMouseMove(event) {
 }
 
 const updateSphere = (event) => {
-    sphere.position.z = window.scrollY * 0.01;
+    sphere.position.z = window.scrollY * -0.01;
     sphere.position.x = window.scrollY * 0.00000000000000000000000000000000000000000000000000002;
     sphere.position.y = window.scrollY * 0.0000000000000000000000000000000000000000000000000000001
 }
