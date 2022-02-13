@@ -102,5 +102,8 @@ section {height:100vh;}
 }
 
 .quoteText {
+    position: absolute;
     color: white;
+    top: 375px;
+    left: 50%;
 }
