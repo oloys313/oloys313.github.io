@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     var ourScene = new ScrollMagic.Scene({
         triggerElement: '.mindmap.a',
-        reverse: false
+        reverse: true
     })
     .setClassToggle('.mindmap.a','show')
     .addTo(controller);
