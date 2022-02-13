@@ -17,6 +17,7 @@ $(document).ready(function(){
         triggerHook: 0.5,*/
         reverse: true
     })
+    .addIndicators()
     .setClassToggle('.quoteText','show')
     .addTo(ccontroller);
 })
