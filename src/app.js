@@ -2,7 +2,7 @@ const flightPath = {
     curviness: 1.25,
     autoRotate: true,
     values: [
-        {x:80, y:-10},
+        {x:0, y:-10},
         {x:100, y:-20},
         {x:300, y:10},
         {x:500, y:100},
