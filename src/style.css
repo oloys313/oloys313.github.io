@@ -148,7 +148,7 @@ section {height:100vh;}
     position: relative;
     font-size: 20px;
     color: white;
-    left: 7.5%;
+    /*left: 7.5%;*/
     font-family: 'Helvetica';
     word-break:break-all;
 }
