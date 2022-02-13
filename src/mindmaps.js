@@ -12,6 +12,7 @@ $(document).ready(function(){
 
     var oourScene = new ScrollMagic.Scene({
         triggerElement: '.animation',
+        triggerHook: 0,
         reverse: true
     })
     .setClassToggle('.quoteText','show')
