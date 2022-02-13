@@ -5,7 +5,7 @@ $(document).ready(function(){
         triggerElement: '.mindmap.a',
         reverse: true
     })
-    .setPin('.mindmap.a')
+    .setPin('.animation.b')
     .setClassToggle('.mindmap.a','show')
     .addTo(controller);
 })
