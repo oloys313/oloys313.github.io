@@ -143,3 +143,9 @@ section {height:100vh;}
     color: white;
     left: 15%;
 }
+
+.mindmap.a h4 {
+    position: relative;
+    color: white;
+    left: 7.5%;
+}
