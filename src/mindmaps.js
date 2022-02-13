@@ -2,9 +2,10 @@ $(document).ready(function(){
     var controller = new ScrollMagic.Controller();
 
     var ourScene = new ScrollMagic.Scene({
-        triggerElement: '.mindmap.a',
+        triggerElement: '.animation.b',
         reverse: true
     })
+    .addIndicators()
     .setPin('.animation.b')
     .setClassToggle('.mindmap.a','show')
     .addTo(controller);
