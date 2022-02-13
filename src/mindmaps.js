@@ -11,10 +11,10 @@ $(document).ready(function(){
     var ccontroller = new ScrollMagic.Controller();
 
     var oourScene = new ScrollMagic.Scene({
-        triggerElement: '.animation',
-        duration: 1100,
+        triggerElement: '.paper-plane',
+        /*duration: 1100,*/
         /*offset: 200,*/
-        triggerHook: 1,
+        triggerHook: 0.5,
         reverse: true
     })
     .setClassToggle('.quoteText','show')
