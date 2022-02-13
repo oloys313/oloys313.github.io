@@ -1,3 +1,9 @@
+:root {
+    --minimap-main-color: rgb(163, 163, 163);
+    --minimap-border-color: #373737;
+}
+
+
 *
 {
     margin: 0;
@@ -112,6 +118,8 @@ section {height:100vh;}
 .mindmap {
     border-radius: 10%;
     background: #08921f;
-    width: 150px;
-    height: 100px;
+    height: 275px;
+    width:450px;
+    border-style: none none none solid;
+    border-color: var(--minimap-border-color);
 }
