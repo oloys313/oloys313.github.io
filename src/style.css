@@ -116,6 +116,7 @@ section {height:100vh;}
 }
 
 .mindmap {
+    position: relative;
     border-radius: 10%;
     background: #08921f;
     height: 275px;
