@@ -98,6 +98,13 @@ section {height:100vh;}
     left: -10%;
 }
 
+.treasureMap {
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+}
+
 .scrollIcon {
     display: block;
     margin-left: auto;
