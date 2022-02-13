@@ -123,3 +123,8 @@ section {height:100vh;}
     border-style: none none none solid;
     border-color: var(--minimap-border-color);
 }
+
+.mindmap a {
+    top: 10px;
+    left: 50px;
+}
