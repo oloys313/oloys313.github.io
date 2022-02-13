@@ -124,7 +124,7 @@ section {height:100vh;}
     border-color: var(--minimap-border-color);
 }
 
-.mindmap a {
+.mindmap.a {
     top: 10px;
     left: 50px;
 }
