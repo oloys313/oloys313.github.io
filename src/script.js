@@ -7,7 +7,7 @@ import * as THREE from 'https://cdn.skypack.dev/-/three@v0.137.5-HJEdoVYPhjkiJWk
 //Loading
 const textureLoader = new THREE.TextureLoader()
 
-const normalTexture = textureLoader.load('/textures/GolfBallNormal.png')
+const normalTexture = textureLoader.load('https://oloys313.github.io/static//textures/GolfBallNormal.png')
 
 // Debug
 //const gui = new dat.GUI()
