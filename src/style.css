@@ -89,7 +89,7 @@ section {height:100vh;}
     height: 100px;
     position: absolute;
     top: 50%;
-    left: 0%;
+    left: -10%;
 }
 
 .scrollIcon {
