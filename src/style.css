@@ -100,3 +100,7 @@ section {height:100vh;}
     height: 50px;
     width: 50px;
 }
+
+.quoteText {
+    color: white;
+}
