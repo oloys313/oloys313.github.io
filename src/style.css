@@ -108,3 +108,10 @@ section {height:100vh;}
     left: 50%;
     font-size: 30px;
 }
+
+.mindmap {
+    border-radius: 10%;
+    background: #08921f;
+    width: 150px;
+    height: 100px;
+}
