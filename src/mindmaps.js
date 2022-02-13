@@ -5,6 +5,7 @@ $(document).ready(function(){
         triggerElement: '.mindmap.a',
         reverse: true
     })
+    .setPin('.mindmap.a')
     .setClassToggle('.mindmap.a','show')
     .addTo(controller);
 })
