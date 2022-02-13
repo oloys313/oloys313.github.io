@@ -13,8 +13,8 @@ $(document).ready(function(){
     var oourScene = new ScrollMagic.Scene({
         triggerElement: '.animation',
         /*duration: 1100,
-        offset: 200,
-        triggerHook: 0.5,*/
+        offset: 200,*/
+        triggerHook: 0.5,
         reverse: true
     })
     .addIndicators()
