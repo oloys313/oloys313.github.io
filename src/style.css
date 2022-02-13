@@ -128,4 +128,12 @@ section {height:100vh;}
 .mindmap.a {
     top: 10px;
     left: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.mindmap.a.show {
+    opacity: 1;
+    transform: translateY(0px);
 }
