@@ -7,7 +7,7 @@ import * as THREE from 'https://cdn.skypack.dev/-/three@v0.137.5-HJEdoVYPhjkiJWk
 //Loading
 const textureLoader = new THREE.TextureLoader()
 
-const normalTexture = textureLoader.load('https://oloys313.github.io/static//textures/CircleGridNormal.png')
+const normalTexture = textureLoader.load('https://oloys313.github.io/static//textures/RainNormal.png')
 
 // Debug
 //const gui = new dat.GUI()
@@ -83,7 +83,7 @@ window.addEventListener('resize', () =>
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
 camera.position.x = 0
-camera.position.y = 0
+camera.position.y = 0.15
 camera.position.z = 2
 scene.add(camera)
 
@@ -122,7 +122,9 @@ function onDocumentMouseMove(event) {
 }
 
 const updateSphere = (event) => {
-    sphere.position.y = window.scrollY * 0.001
+    sphere.position.z = window.scrollY * -0.01;
+    sphere.position.x = window.scrollY * 0.00000000000000000000000000000000000000000000000000002;
+    sphere.position.y = window.scrollY * 0.0000000000000000000000000000000000000000000000000000001
 }
 
 window.addEventListener('scroll', updateSphere);
