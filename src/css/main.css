@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+.first-section {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.image-wrapper {
+    position: absolute;
+}
+
+.past-projects {
+    position: absolute;
+    width: 400px;
+    left: calc(50% - 400px);
+    height: 530px;
+    top: 150px;
+    /*background: red;*/
+    background-image: url(https://www.pngall.com/wp-content/uploads/5/Open-Box-PNG-Free-Download.png);
+}
+
+.sect_1_3, .sect_1_4 {
+    width: 175px;
+    height: 175px;
+}
+
+.sect_1_1, .sect_1_2 {
+    width: 250px;
+    height: 175px;
+}
+
+.sect_1_4 {
+    background-color: white;
+}
+
+.past-bin {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    font-size: 100px;
+}
+
+.speech-text {
+    text-align: center;
+}
+
+.code-header {
+    font-size: 40px;
+    color: purple;
+    font-family: 'Press Start 2P', cursive;
+}
