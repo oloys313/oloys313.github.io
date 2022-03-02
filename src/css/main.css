@@ -64,3 +64,12 @@
 .description {
     font-size: 30px;  
 }
+
+.inner {
+position: relative;
+  
+}
+.outer {
+  border-bottom: solid white 2px;
+  overflow: hidden;
+}
