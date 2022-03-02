@@ -60,3 +60,7 @@
     color: purple;
     font-family: 'Press Start 2P', cursive;
 }
+
+.description {
+    font-size: 30px;  
+}
