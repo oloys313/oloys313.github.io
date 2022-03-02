@@ -67,6 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 200, tweenChanges: true})
                                         .setTween(tween)
                                         .setPin("#trigger1")
-                                        .addIndicators() // add indicators (requires plugin)
+                                        //.addIndicators() // add indicators (requires plugin)
                                         .addTo(controller3);
 })
