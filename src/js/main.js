@@ -69,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                         .setPin("#trigger1")
                                         //.addIndicators() // add indicators (requires plugin)
                                         .addTo(controller3);
+	
+	var cntrl2 = new ScrollMagic.Controller();
     
     new ScrollMagic.Scene({
 							triggerElement: ".outer",
@@ -78,5 +80,5 @@ document.addEventListener('DOMContentLoaded', () => {
 						})
 						.setClassToggle(".inner", "visible") // add class to reveal
 						.addIndicators() // add indicators (requires plugin)
-						.addTo(controller);
+						.addTo(cntrl2);
 })
