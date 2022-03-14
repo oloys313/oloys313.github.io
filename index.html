@@ -7,6 +7,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"> 
 		<link rel="stylesheet" href="src/css/navbar.css">
 		<link rel="stylesheet" href="src/css/main.css">
+		<link rel="stylesheet" href="src/css/scrollMagic.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
@@ -14,6 +15,11 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha512-A98SmLRZISk4eIxQBeCm8k0jAcwN3A3lBx4hr7baoMpV1VpxcxlZIhi5fJIZN50sQ5RlCzx8yV+Voy2cR6x0aA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<link href='https://cdn.jsdelivr.net/npm/froala-editor@4.0.8/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' /><script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@4.0.8/js/froala_editor.pkgd.min.js'></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js" integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	</head>
 	<body>
 		<nav class="navigation">
@@ -21,7 +27,7 @@
 			<ul class="nav-menu">
 				<li><a href="#start">.start()</a></li>
 				<li><a href="#purpose">.purpose()</a></li>
-				<li><a href="#dare">.dare()</a></li>
+				<li><a href="#roadmap">.dare()</a></li>
 			</ul>
 			<div class="nav-toggle">
 				<span class="icon-bar"></span>
@@ -66,24 +72,50 @@
 			
 			<div class="outer">
 				<p id="description" class="inner">Utility. That is it. Utility. Utility for game makers and game players. With a chained community pass, you can access a marketplace full of wonderous games, made by YOU.</p>
+
+				
+				<script>
+					// init controller
+					var controller = new ScrollMagic.Controller();
+				</script>
+				<div class="spacer s1"></div>
+				<div id="trigger4" class="spacer s1"></div>
+				<div class="spacer s0"></div>
+				<img src="src/img/pc.png" alt="pc" style="width: 50px;">
+				<div class="animate4 box2 black outline" style="left: 700px;">
+					<p>TCC Train</p>
+				</div>
+				<div class="animate4 box2 black outline" style="left: 700px;">
+					<h1 class="trainText">G</h1>
+				</div>
+				<div class="animate4 box2 black outline" style="left: 700px;">
+					<h1 class="trainText" style="font-family: 'ZCOOL KuaiLe', cursive;">A</h1>
+				</div>
+				<div class="animate4 box2 black outline" style="left: 700px;">
+					<h1 class="trainText" style="font-family: 'Chela One', cursive;">M</h1>
+				</div>
+				<div class="animate4 box2 black outline" style="left: 700px;">
+					<h1 class="trainText" style="font-family: 'ZCOOL KuaiLe', cursive;">E</h1>
+				</div>
+				<div class="animate4 box2 black outline" style="left: 700px;">
+					<h1 class="trainText" style="font-family: 'Chela One', cursive;">S</h1>
+				</div>
+				<img src="src/img/pc.png" alt="pc2" style="width: 50px; position: relative; left: 675px;">
+				<div class="spacer s2"></div>
+				<script>
+					// build tween
+					var tween = TweenMax.staggerFromTo(".animate4", 2, {left: 700}, {left: 0, ease: Back.easeOut}, 0.15);
+				
+					// build scene
+					var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 300})
+									.setTween(tween)
+									// .addIndicators({name: "staggering"}) // add indicators (requires plugin)
+									.addTo(controller);
+				
+				</script>
 			 </div>
-			<div class="outer">
-			 	<p class="inner"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt consequat libero. Curabitur rutrum pulvinar ipsum sed dictum. In vel nisl eu neque egestas feugiat. Nulla velit eros, posuere non diam eget, accumsan suscipit nisl. Nam mollis, dui id feugiat ullamcorper, leo urna porttitor sapien, efficitur mollis turpis dui vel urna. Fusce sagittis sem tincidunt, pulvinar tellus quis, iaculis metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sollicitudin congue nunc, vel hendrerit odio aliquam id. Vestibulum libero ex, efficitur at consequat eu, auctor sed mi. Nullam eget fermentum augue. Nullam porttitor auctor lacinia.</p>
-			</div>
-			<div class="outer">
-				<p class="inner">Donec eu ante vitae nisi faucibus aliquam. Etiam vitae mattis quam. Etiam eget velit eget urna luctus sagittis ut ut arcu. Nunc feugiat malesuada velit, eget pulvinar nulla molestie vitae. Nullam in iaculis dui. Donec scelerisque arcu lorem, non molestie urna egestas at. Aliquam auctor convallis sem at rhoncus. Donec in elit a arcu ultrices imperdiet et sed tortor. Nunc nisl nunc, ultrices sed magna ac, aliquam ornare ante. Nunc elementum augue iaculis odio sollicitudin, et pharetra purus suscipit. Praesent sodales nibh nec ipsum viverra euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-			<div class="outer">
-				<p class="inner">Morbi non vehicula risus. Vestibulum a auctor metus, vel condimentum elit. Praesent convallis suscipit mauris sit amet faucibus. Nam pretium suscipit augue non dapibus. Maecenas felis massa, lacinia nec erat non, dignissim elementum diam. Donec sed odio eu lorem malesuada placerat nec laoreet diam. Donec condimentum maximus porta. Integer vitae tellus id lacus auctor iaculis nec sed nisl. Nunc pulvinar lacus in dui tempus mollis. Curabitur consequat risus turpis, a lacinia arcu blandit at. Donec ac facilisis velit. Duis condimentum est eleifend, posuere risus ac, suscipit sem. Cras posuere convallis lectus quis feugiat. Quisque accumsan ultrices leo at varius. Nullam aliquet velit id arcu placerat, a blandit enim ultricies. Sed lectus massa, convallis sed diam in, faucibus interdum lacus.</p>
-			</div>
-			<div class="outer">
-				<p class="inner">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean cursus eros et est aliquam, a imperdiet dui pharetra. Nullam nisi mi, efficitur nec posuere eu, scelerisque nec mi. Mauris imperdiet, orci eget convallis iaculis, sapien massa congue tellus, vitae laoreet elit odio ac sem. Vestibulum bibendum nec odio condimentum rhoncus. Ut quis malesuada sapien. Ut vel purus elementum, molestie tortor vehicula, consectetur nulla. Suspendisse ullamcorper mauris eu lectus mattis varius. Mauris ex orci, eleifend ac arcu non, iaculis euismod ipsum.</p>
-			</div>
-			<div class="outer">
-				<p class="inner">Nullam ex dolor, congue nec hendrerit iaculis, varius eget nisl. Aliquam sit amet nibh lorem. Aenean malesuada dolor felis, ut pulvinar lorem hendrerit at. Sed ut urna eget est blandit venenatis id vel orci. Suspendisse id est eget mi iaculis malesuada quis ac dui. Praesent consequat tempor felis eget facilisis. Fusce arcu ex, dignissim ut mattis sit amet, consectetur eu nulla. Aenean tristique eleifend efficitur. Ut eget libero faucibus, mattis nisl et, convallis urna.</p>
-			</div>
 			<br>
-			<div class="dareRoot">
+			<!--<div class="dareRoot">
 				<h1 class="code-header" id="dare">.dare(List&lt;OPTS&gt; opts)</h1>
 				<br>
 				<h2>Pick an item box: </h1>
@@ -98,7 +130,25 @@
 						<img src="src/gif/MysteryBox.gif" alt="mysteryBox3">
 					</div>
 				</div>
-				<img class="marioSprite" src="src/gif/MarioRun.gif">
+				<img class="marioSprite" src="src/gif/MarioRun.gif">-->
+
+				<div class="roadmapRoot">
+					<h1 class="code-header" id="roadmap">.roadmap(List&lt;PLANS&gt; roadmapPlans)</h1>
+					<br>
+					<div class="roadmapParent">
+						<ol class="roadmapList">
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit et quos iusto voluptas facilis in fugiat ut quis? Quia laborum voluptas at labore repellat quae omnis impedit cum velit obcaecati.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit et quos iusto voluptas facilis in fugiat ut quis? Quia laborum voluptas at labore repellat quae omnis impedit cum velit obcaecati.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit et quos iusto voluptas facilis in fugiat ut quis? Quia laborum voluptas at labore repellat quae omnis impedit cum velit obcaecati.</li>
+						</ol>
+						<div class="caravParent">
+							<img src="src/gif/caravan.gif" alt="caravan" class="caravan">
+						</div>
+					</div>
+
+					<div class="roadmapParent"></div>
+
+				</div>
   
 				<script> 
 					// var editor = new FroalaEditor('.site-container');
@@ -107,5 +157,6 @@
 		</div>
 		<script src="src/js/navbar.js"></script>
 		<script src="src/js/main.js"></script>
+		<script src="src/js/roadmap.js"></script>
 	</body>
 </html>

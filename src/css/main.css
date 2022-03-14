@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=ZCOOL+KuaiLe&display=swap');
 
 * {
     margin: 0;
@@ -62,8 +63,9 @@
     font-family: 'Ubuntu Mono', monospace;
 }
 
-.description {
-    font-size: 30px;  
+#description {
+    font-size: 25px;  
+    line-height: 1.6;
 }
 
 .inner {
@@ -101,7 +103,7 @@ position: relative;
     display: flex;
     }
     
-    /* Create three equal columns that sits next to each other */
+    /* Create three equal columns that sits next to each other site-container*/
 .choicesWrapper div {
     flex: 33.33%;
     padding: 5px;
@@ -114,8 +116,40 @@ position: relative;
 
 .choicesWrapper div img:hover {
     transform: scale(1.5);
-  }
+}
 
-.dareRoot h2 {
+.roadmapParent {
     text-align: center;
+    height: 600px;
+    width: 475px;
+    /*background-image: url("/src/img/mountains.jpg");*/
+}
+
+.caravan {
+    width: 125px;
+}
+
+.trainText {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: 30%;
+}
+
+.roadmapList {
+    list-style-type: cjk-ideographic;
+    position: absolute;
+    width: 50%;
+    margin: auto;
+}
+
+.roadmapList li {
+    padding-bottom: 40px;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 400; 
+}
+
+.roadmapList li::marker {
+    font-size: 30px;
 }

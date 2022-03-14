@@ -79,6 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
 							offset: 50 // move trigger to center of element
 						})
 						.setClassToggle(".inner", "visible") // add class to reveal
-						.addIndicators() // add indicators (requires plugin)
+						// .addIndicators() // add indicators (requires plugin)
 						.addTo(cntrl2);
 })
