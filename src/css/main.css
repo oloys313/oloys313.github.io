@@ -145,6 +145,7 @@ position: relative;
     position: absolute;
     width: 50%;
     margin: auto;
+    z-index: 1;
 }
 
 .roadmapList li {
