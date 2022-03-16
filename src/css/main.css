@@ -129,6 +129,10 @@ position: relative;
     width: 125px;
 }
 
+.caravParent {
+    z-index: -1;
+}
+
 .trainText {
     color: white;
     font-size: 40px;
