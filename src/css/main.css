@@ -130,7 +130,7 @@ position: relative;
 }
 
 .caravParent {
-    z-index: -1;
+    z-index: 1;
 }
 
 .trainText {
@@ -163,6 +163,7 @@ position: relative;
   display: inline-block;
   position: relative;
   color: #0087ca;
+  z-index: 2;
 }
 
 .hover-underline-animation:after {

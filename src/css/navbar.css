@@ -170,6 +170,7 @@ span.icon-bar{
 	font-size:16px;
 	font-weight:300;
 	line-height:20px;
+	z-index: -2;
 }
 .site-container p{
 	margin:10px 0;
