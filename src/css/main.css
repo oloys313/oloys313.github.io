@@ -1,185 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-} 
-
-.first-section {
-    width: 100%;
-    height: 150vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
+    overflow-x: hidden;
 }
 
-.image-wrapper {
-    position: absolute;
+#wrapper {
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(to right, 
+    purple    50%, 
+    rgb(255, 94, 0)  50% );
+    z-index: -1;
 }
 
-.past-projects {
-    position: absolute;
-    width: 400px;
-    left: calc(50% - 400px);
-    height: 530px;
-    top: 150px;
-    /*background: red;*/
-    background-image: url(https://www.pngall.com/wp-content/uploads/5/Open-Box-PNG-Free-Download.png);
-}
-
-.sect_1_3, .sect_1_4 {
-    width: 175px;
-    height: 175px;
-}
-
-.sect_1_1, .sect_1_2 {
-    width: 250px;
-    height: 175px;
-}
-
-.sect_1_4 {
+#hmbgr {
+    position: fixed;
     background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    left: 48.3vw;
+    top: 40px;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden hidden;
+    z-index: 9;
 }
-
-.past-bin {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: absolute;
-    top: 400px;
-    left: 300px;
-    font-size: 100px;
-}
-
-.speech-text {
-    text-align: center;
-}
-
-.code-header {
-    font-size: 40px;
-    color: purple;
-    font-family: 'Ubuntu Mono', monospace;
-}
-
-#description {
-    font-size: 25px;  
-    line-height: 1.6;
-}
-
-.inner {
-position: relative;
   
-}
-.outer {
-  border-bottom: solid white 2px;
-  overflow: hidden;
-}
-
-.inner {
-		opacity: 0;
-		-webkit-transform: scale(0.9);
-			 -moz-transform: scale(0.9);
-				-ms-transform: scale(0.9);
-				 -o-transform: scale(0.9);
-						transform: scale(0.9);
-		-webkit-transition: all 1s ease-in-out;
-			 -moz-transition: all 1s ease-in-out;
-				-ms-transition: all 1s ease-in-out;
-				 -o-transition: all 1s ease-in-out;
-						transition: all 1s ease-in-out;
-	}
-	.inner.visible {
-		opacity: 1;
-		-webkit-transform: none;
-			 -moz-transform: none;
-				-ms-transform: none;
-				 -o-transform: none;
-						transform: none;
-	}
-
-.choicesWrapper {
-    display: flex;
-    }
-    
-    /* Create three equal columns that sits next to each other site-container*/
-.choicesWrapper div {
-    flex: 33.33%;
-    padding: 5px;
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 9px 6.5px;
+    transition: 0.4s;
+    z-index: 9;
 }
 
-.choicesWrapper div img {
-    width: 75%;
-    transition: transform .2s;
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.choicesWrapper div img:hover {
-    transform: scale(1.5);
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.roadmapParent {
-    text-align: center;
-    height: 600px;
-    width: 475px;
-    /*background-image: url("/src/img/mountains.jpg");*/
+.ptSans { 
+    font-family: 'PT Sans', sans-serif;
 }
 
-.caravan {
-    width: 125px;
+.uppercase {
+    text-transform: uppercase;
 }
 
-.caravParent {
-    z-index: 1;
+.white {
+    color: whitesmoke;
 }
 
-.trainText {
-    color: white;
-    font-size: 40px;
-    position: relative;
-    top: 30%;
-}
-
-.roadmapList {
-    list-style-type: cjk-ideographic;
+#boldName {
     position: absolute;
-    width: 50%;
-    margin: auto;
+    font-size: 13vw;
+    top: 20vh;
+    left: 22vw;
+    z-index: 2;
+}
+
+#gameDevStrtImg {
+    width: 20vw;
+    position: absolute;
+    left: 57vw;
+    top: 37vh;
+    z-index: 2;
+}
+
+.circles {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    /* background-color: green; */
+    position: absolute;
     z-index: 1;
 }
 
-.roadmapList li {
-    padding-bottom: 40px;
-    font-size: 40px;
-    line-height: 1;
-    font-weight: 400; 
+#email {
+    width: 35vw;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
 }
 
-.roadmapList li::marker {
-    font-size: 30px;
+#email label {
+    font-size: 2vw;
+    font-family: 'PT Sans', sans-serif;
 }
 
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #0087ca;
-  z-index: 2;
-}
-
-.hover-underline-animation:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+#emailTitle {
+    text-align: center;
+    
 }
