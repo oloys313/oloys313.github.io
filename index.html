@@ -31,14 +31,14 @@
         <div class="bar3"></div>
     </div>
 
-    <div id="fullpage">
+    <div id="container">
 
-        <div id="wrapper" class="section">
+        <div id="wrapper" data-anchor="Page 1" class="section">
             <h1 id="boldName" class="ptSans uppercase white">Phiz</h1>
             <img id="gameDevStrtImg" src="src/img/gameDev.png" alt="gameDev">
         </div>
 
-        <div id="wrapper" class="section">
+        <div id="wrapper" data-anchor="Page 2" class="section">
             <h1 class="ptSans white" id="emailTitle">Subscribe for more Updates</h1>
             <div id="email">
                 <label for="fname" class="white">First name:</label><br>
@@ -59,9 +59,9 @@
           x.classList.toggle("change");
         }
 
-        /*$(document).ready(function() {
-            $('#fullpage').fullpage();
-        })*/
+        $(document).ready(function() {
+            new Pageable("#container");
+        })
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
