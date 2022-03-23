@@ -8,8 +8,8 @@
     width:100vw;
     height:100vh;
     background: linear-gradient(to right, 
-    #E6B6FF    50%, 
-    #B6FFF5 50% );
+    #FF4242   50%, 
+    #000000 50% );
     z-index: -1;
 }
 
