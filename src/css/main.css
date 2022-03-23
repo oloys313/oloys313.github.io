@@ -1,103 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+/*font-family: 'PT Sans', sans-serif;  */
 
 * {
-    overflow-x: hidden;
-}
-
-#wrapper {
-    width:100vw;
-    height:100vh;
-    background: linear-gradient(to right, 
-    #FF4242   50%, 
-    #000000 50% );
-    z-index: -1;
-}
-
-#hmbgr {
-    position: fixed;
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    left: 48.3vw;
-    top: 40px;
-    display: inline-block;
-    cursor: pointer;
-    overflow: hidden hidden;
-    z-index: 9;
-}
-  
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 9px 6.5px;
-    transition: 0.4s;
-    z-index: 9;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.ptSans { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.white {
-    color: whitesmoke;
-}
-
-#boldName {
-    position: absolute;
-    font-size: 13vw;
-    top: 20vh;
-    left: 22vw;
-    z-index: 2;
-}
-
-#gameDevStrtImg {
-    width: 20vw;
-    position: absolute;
-    left: 57vw;
-    top: 37vh;
-    z-index: 2;
-}
-
-.circles {
-    width: 4vw;
-    height: 4vw;
-    border-radius: 100%;
-    /* background-color: green; */
-    position: absolute;
-    z-index: 1;
-}
-
-#email {
-    width: 35vw;
-    text-align: center;
-    margin: auto;
     overflow: hidden;
 }
 
-#email label {
-    font-size: 2vw;
-    font-family: 'PT Sans', sans-serif;
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: radial-gradient(ellipse at center, #ffffff 0%, #eeeeee 100%);
 }
 
-#emailTitle {
-    text-align: center;
-    
+section::after {
+    content: "";
+    background-image: url("src/img/grain.png");
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+    transition: 0.9 color;
+}
+
+.content .textBox p {
+    color: #333;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.9 color;
+}
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img {
+    max-width: 340px;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    cursor: grab;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.thumb li:hover {
+    transform: translateX(-15px);
+}
+
+.thumb li img {
+    max-width: 60px;   
+    z-index: 2;
+}
+
+.sci {
+    position: absolute;
+    top: 90%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 600px);
+    z-index: 0;
+    transition: 0.5s all;
 }
