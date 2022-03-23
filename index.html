@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
     <link href="src/css/main.css" rel="stylesheet" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -15,6 +17,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" integrity="sha512-I0VFyPo7hdM7YrEbQ0pvX4bX2904k0+B19u/xBrPrQoMprfcSnIDfGFD8kP52GbAhwtDjkEVhXlQvj8+vkJyew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/BezierPlugin.min.js" integrity="sha512-oOy5+mtZRcqjn6b9k4oj+tk2/hVIetzOAM9Y5cndEHgLxiIGavAz1agbHf6JjGzxXZ2SMbu08Uy1DDF0UwA0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <title>Phiz - The NFT/Game Development Platform</title>
 </head>
@@ -26,19 +30,23 @@
         <div class="bar3"></div>
     </div>
 
-    <div id="wrapper">
-        <h1 id="boldName" class="ptSans uppercase white">Phiz</h1>
-        <img id="gameDevStrtImg" src="src/img/gameDev.png" alt="gameDev">
-    </div>
+    <div id="fullpage">
 
-    <div id="wrapper">
-        <h1 class="ptSans white" id="emailTitle">Subscribe for more Updates</h1>
-        <div id="email">
-            <label for="fname">First name:</label><br>
-            <input type="text" class="form-control" placeholder="Name"><br>
-            <label for="lname">Email:</label><br>
-            <input type="text" class="form-control" placeholder="Email"><br><br>
-            <button class="btn btn-primary btn-square" type="button">✔</button><br>
+        <div id="wrapper" class="section">
+            <h1 id="boldName" class="ptSans uppercase white">Phiz</h1>
+            <img id="gameDevStrtImg" src="src/img/gameDev.png" alt="gameDev">
+        </div>
+
+        <div id="wrapper" class="section">
+            <h1 class="ptSans white" id="emailTitle">Subscribe for more Updates</h1>
+            <div id="email">
+                <label for="fname">First name:</label><br>
+                <input type="text" class="form-control" placeholder="Name"><br>
+                <label for="lname">Email:</label><br>
+                <input type="text" class="form-control" placeholder="Email"><br><br>
+                <button class="btn btn-primary btn-square" type="button">✔</button><br>
+            </div>
+
         </div>
 
     </div>
@@ -49,6 +57,11 @@
         function myFunction(x) {
           x.classList.toggle("change");
         }
+
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        })
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
     <script defer src="src/js/randomCircles.js"></script>
