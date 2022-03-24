@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/home.css">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
     <title>The NFT/Game Development Platform</title>
 </head>
@@ -13,12 +15,16 @@
     <section>
         <div class="circle"></div>
         <header>
-            <a href="#"><img src="src/img/logo.png" class="logo"></a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+            <a href="#"><img src="favicon.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="#">GamePlace</a></li>
                 <li><a href="#">News</a></li>
+                <li><a href="#"><img src="src/img/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="src/img/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="src/img/instagram.png" alt=""></a></li>
             </ul>
         </header>
         <div class="content">
@@ -28,13 +34,13 @@
                 <a href="#">Learn More</a>
             </div>
             <div class="imgBox">
-                <img src="src/img/img1.png" class="starbucks">
+                <img src="src/img/blueBlackPlanet.png" class="starbucks">
             </div>
         </div>
         <ul class="thumb">
-            <li><img src="src/img/thumb1.png" onclick="imgSlider('src/img/img1.png', '#017143')" alt=""></li>
-            <li><img src="src/img/thumb2.png" onclick="imgSlider('src/img/img2.png', '#eb7495')" alt=""></li>
-            <li><img src="src/img/thumb3.png" onclick="imgSlider('src/img/img3.png', '#d752b1')" alt=""></li>
+            <li><img src="src/img/blueBlackPlanet.png" onclick="imgSlider('src/img/blueBlackPlanet.png', '#0e4bce')" alt=""></li>
+            <li><img src="src/img/pinkRush.png" onclick="imgSlider('src/img/pinkRush.png', '#eb7495')" alt=""></li>
+            <li><img src="src/img/purpleBlueBurst.png" onclick="imgSlider('src/img/purpleBlueBurst.png', '#8221be')" alt=""></li>
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="src/img/facebook.png" alt=""></a></li>
@@ -56,6 +62,14 @@
             const lmButton = document.querySelector('.content .textBox a');
             lmButton.style.background = color;
         }
+
+        function toggleMenu() {
+            var menu = document.querySelector('.toggle')
+            var nav = document.querySelector('.navigation')
+            menu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+
     </script>
 
 </body>

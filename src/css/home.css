@@ -36,14 +36,55 @@ header {
     align-items: center;
 }
 
-header.logo {
+header .logo {
     position: relative;
+    /* width: 50px;
+    height: 50px; */
     max-width: 80px;
 }
 
 header ul {
     position: relative;
     display: flex;
+}
+
+.toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: grab;
+    background-color: pink;
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+.toggle.active {
+    position: fixed;
+    right: 20px;
+    background-color: green;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 10;
+}
+header ul li a {
+    font-size: 1.5em;
+    margin-left: 40px;
 }
 
 header ul li {
@@ -78,7 +119,7 @@ header ul li a {
 }
 
 .content .textBox h2 span {
-    color: #017143;
+    color: #0e4bce;
     font-size: 1.2em;
     font-weight: 900;
     transition: 0.9 color;
@@ -94,7 +135,7 @@ header ul li a {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #017143;
+    background: #0e4bce;
     color: #fff;
     border-radius: 40px;
     font-weight: 500;
@@ -111,7 +152,7 @@ header ul li a {
 }
 
 .content .imgBox img {
-    max-width: 340px;
+    max-width: 375px;
 }
 
 .thumb li {
@@ -161,10 +202,12 @@ header ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #017143;
+    background: #0e4bce;
     clip-path: circle(600px at right 600px);
     z-index: 0;
     transition: 0.5s all;
+    box-shadow: 8px 8px 8px 8px #969696;
+  	-webkit-box-shadow: 8px 8px 8px 8px #969696;
 }
 
 @media (max-width: 991px) {
@@ -211,14 +254,35 @@ header ul li a {
     }
 
     .sci {
-        background: #017143;
+        display: none;
+        /* background: #0e4bce;
         right: 0;
         width: 50px;
         border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+        border-bottom-left-radius: 5px; */
     }
 
     .circle {
         clip-path: circle(400px at center bottom);
+    }
+}
+
+@media (max-height: 725px) {
+    .content .imgBox img  {
+        display: none;
+    }
+
+    .thumb {
+        display: none;
+    }
+
+    .sci {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+    .toggle{ 
+        display: none;
     }
 }
